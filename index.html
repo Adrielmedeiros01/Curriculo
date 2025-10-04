@@ -4,120 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Meu Curriculo</title>
+    <title>Currículo - Adriel Medeiros de Araújo</title>
 </head>
 <style>
     body {
-        background-image: linear-gradient(red, blue);
-        background-repeat: no-repeat;
-        color: white;
-        margin-top: 2.5rem;
-        padding: 1rem;
+        margin: 0;
+        
     }
 
-    p {
-        text-align: justify;
-        border: solid 1px black;
-        padding: 1rem;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px black;
-        width: 85%;
-        transition: 0.8s;
+    .container {
+        display: flex;
+        width: 80%;
+        margin: 20px auto;
+        padding: 2rem;
+        margin-top: 0;
     }
 
-    p:hover {
-        transform: translate(10px, 5px);
+    .nomeTitulo,
+    .imgPerfil {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgPerfil img {
+        border-radius: 100%;
+        box-shadow: 5px 5px 25px black;
+    }
+
+    .nomeTitulo {
+        margin-right: 10px;
+    }
+    .nomeTitulo h1{
+        font-size: 50px;
         transition: 0.5s;
-        box-shadow: 5px 5px 5px red;
-    }
-
-
-    h1,
-    h3 {
         color: white;
         text-shadow: 5px 5px 5px black;
     }
 
-    img {
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px black;
-        border: solid black 0.5px;
-        width: 250px;
-        height: 170px;
-        transition: 0.8s;
-    }
-
-    img:hover {
-        transform: translate(10px, 5px);
-        transition: 0.8s;
-        margin-right: 1rem;
-        box-shadow: 5px 5px 5px rgb(78, 7, 145);
-    }
-
-    @media screen and (max-width: 550px){
-
-        img {
-            width: 150px;
-            height: 100px;
+    @media screen and (max-width: 600px) {
+        .nomeTitulo h1 {
+            font-size: 25px;
+            transition: 0.5s;
         }
+    }
+
+    .dir,
+    .esq {
+        width: 100%;
+        margin-left: 5px;
+        border-radius: 8px;
+        transition: 0.5s;
         
+
+    }
+
+    .esq:hover{
+        border: solid 1px;
+        padding: 8px;
+        box-shadow: 5px 5px 5px black;
+        transition: 0.5s;
+    }
+    .dir:hover{
+        border: solid 1px;
+        padding: 8px;
+        box-shadow: 5px 5px 5px black;
+        transition: 0.5s;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .projetos {
+        padding-top: 1rem;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .projetos h3 {
+        text-align: center;
+        padding-bottom: 2rem;
     }
 
     footer {
-        margin-top: 12rem;
+        width: 80%;
+        margin: 20px auto;
         padding: 1rem;
-        color: white;
-
     }
+
+
 </style>
 
+
+
 <body>
-    <header>
-        <h1 style="text-align: center; margin-left: 2.5rem;">Adriel Medeiros de Araújo</h1><br>
+
+    
+
+    <header style=" background-image: linear-gradient(black, white);">
+        <section class="container">
+            <div class="nomeTitulo">
+                <h1>Adriel Medeiros de Araújo</h1>
+            </div>
+            <div class="imgPerfil">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Imagem">
+            </div>
+        </section>
+        <section class="container">
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis obcaecati,
+                voluptatum totam eos veniam excepturi vel molestiae ab. Aperiam, itaque! Error, consequatur excepturi.
+                Ipsa
+                impedit sunt sed non nihil similique!+ Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto,
+                consequuntur ad? Quod veniam vel maxime illo optio aliquam nobis iusto, odio aperiam, atque a nesciunt
+                pariatur nisi voluptates ducimus doloribus.</p>
+        </section>
     </header>
-    <main>
-        <br><br>
-        <div style="text-align: center;">
-            <picture>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzslu-z2zQm3ExaWL8610W5vdJUgQTr3O1Q&s"
-                    alt="Imagem">
-                <img src="https://www.techlise.com.br/blog/wp-content/uploads/2022/02/Screenshot_3-1.png" alt="Imagem">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWs_Py51zLcB95SLJzxD2EARHJFWCtEveN4Q&s"
-                    alt="Imagem">
-                <img src="https://i0.wp.com/brasap.com.br/wp-content/uploads/2020/05/Algoritmos.png?fit=512%2C288&ssl=1"
-                    alt="Imagem">
-            </picture>
+    <main> 
+        <div class="container">
+            <section class="esq">
+                <h3>Formação Acadêmica:</h3>
+                <ul>
+                    <li>
+    Técnico em Informática pelo <a target="_blank" href="https://www.ifpb.edu.br/princesaisabel">IFPB - Princesa Isabel.</a></li><br>
+                    <li>Licenciatura em Computação pelo <a href="https://portal.ifpe.edu.br/afogados/">IFPE - Afogados da Ingazeira.</a></li>
+                </ul>
+            </section>
+            <section  class="dir">
+                <h3>Habilidades e competências:</h3>
+                <ul>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                    <li>a</li>
+                </ul>
+            </section>
+        </div>
+        <div class="projetos">
+            <h3>Projetos</h3>
+            <article>
+                <h4>NomeProjeto</h4>
+                <p><b>Descrição:</b></p>
+                <img src="" alt="">
+            </article>
+            <article>
+                <h4>NomeProjeto</h4>
+                <p><b>Descrição:</b></p>
+                <img src="" alt="">
+            </article>
+            <article>
+                <h4>NomeProjeto</h4>
+                <p><b>Descrição:</b></p>
+                <img src="" alt="">
+            </article>
+            <article>
+                <h4>NomeProjeto</h4>
+                <p><b>Descrição:</b></p>
+                <img src="" alt="">
+            </article>
 
         </div>
-        <br><br><br>
-        <section style="margin-left: 3rem;">
-            <article>
-                <h3>Quem sou eu:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil voluptas, mollitia tempora facilis
-                    amet, provident eius, cupiditate ab iusto obcaecati vero ipsum facere numquam aliquam rem suscipit
-                    dolorem eum.</p>
-            </article>
-            <article>
-                <h3>Habilidades e Competências:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil voluptas, mollitia tempora facilis
-                    amet, provident eius, cupiditate ab iusto obcaecati vero ipsum facere numquam aliquam rem suscipit
-                    dolorem eum.</p>
-            </article>
-            <article>
-                <h3>Projetos:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil voluptas, mollitia tempora facilis
-                    amet, provident eius, cupiditate ab iusto obcaecati vero ipsum facere numquam aliquam rem suscipit
-                    dolorem eum.</p>
-            </article>
-        </section>
     </main>
     <footer>
+        <h3>Contatos e mais</h3>
         <ul>
-            <li><b>GitHub: adrielmedeiros01</b></li>
+            <li>zap</li>
+            <li>git</li>
+            <li>email</li>
+            <li>etc</li>
         </ul>
     </footer>
+
+
+
 
 </body>
 
