@@ -25,8 +25,9 @@
         margin-top: 0;
         padding: 20px;
         background-color: white;
-        height: 35rem;
+        height: 45rem;
         box-shadow: 5px 5px 5px;
+        border: solid;
       
     }
     nav {
@@ -35,7 +36,7 @@
     }
     nav ul li {
         display: inline;
-        padding: 15px
+        padding: 15px;
     }
     .cabecalhoMain {
         display: flex;
@@ -44,7 +45,7 @@
     }
     .cabecalhoMainA {
         width: 50%;
-        font-size: 1.5rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,15 +75,17 @@
     .Formacao_Habilidades {
         display: flex;
         margin-bottom: 2rem;
+
     }
 
     .formacao {
         width: 50%;
-    
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+    
+      
      
     }
 
@@ -92,6 +95,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    
+  
        
     }
 
@@ -113,6 +118,13 @@
         list-style-type: none;
     }
     
+
+    article h4{
+        border: 1px solid;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(9, 9, 121, 1);
+    }
        
 
     @media screen and (max-width: 600px) {
@@ -125,7 +137,8 @@
             margin-top: 0;
             padding: 20px;
             background-color: white;
-            height: 35rem;
+            height: 45rem;
+            border: solid;
             box-shadow: 5px 5px 5px;
       
         }
@@ -191,22 +204,24 @@
     
     <header class="cabecalho">
         <nav>
+            <hr><br>
             <ul>
                 <li>Home</li>
                 <li>Contatos</li>
                 <li>Sobre</li>
             </ul>
+            <br><hr>
         </nav>
         <section class="cabecalhoMain" >
             <div class="cabecalhoMainA">
                 <h1>Adriel M. Araújo</h1>
             </div>
             <div class="cabecalhoMainB">
-                <img height="" width="50%" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+                <img style="box-shadow: 5px 5px 5px  rgba(9, 9, 121, 1); border-radius: 100%;" height="" width="50%" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
                     alt="Imagem">
             </div>
         </section>
-        <p style=" width: 100%; margin-top: 5rem;">Bem-vindo(a)!
+        <p style="width: 100%; margin-top: 5rem;">Bem-vindo(a)!
 
 Transforme suas ideias em resultados reais. Nossa equipe está pronta para ajudar você a alcançar seus objetivos com soluções práticas, eficientes e sob medida para o que você precisa.
 
@@ -238,60 +253,42 @@ Entre em contato e dê o primeiro passo agora mesmo!</p>
                 </ul>
             </div>
         </section>
-        <br>
-        <div>
-            <h2 id="titulo" style=" text-align: center; font-size: 2rem; margin-bottom: 3rem;">Experiências</h2>
-        </div>
-        <!--
-         <article>
-            <h4>TCC (Análise Bibliográfica) - UMA REFLEXÃO SOBRE A IA NO MEIO EDUCACIONAL</h4><br>
-            <p><b>Descrição: </b>
-                    Este trabalho apresenta uma reflexão abrangente sobre o uso da Inteligência Artificial (IA) na
-                    educação, explorando suas contribuições, desafios e novas perspectivas. Além disso, o
-                    desenvolvimento de tecnologias educacionais, como a IA, está transformando profundamente o ambiente
-                    de aprendizagem. As ferramentas de IA oferecem inúmeras possibilidades, como a personalização do
-                    aprendizado, a melhoria da acessibilidade e a otimização da eficácia do ensino. No entanto, esses
-                    avanços também trazem possíveis impactos na qualidade da aprendizagem e nos serviços prestados pelos
-                    estudantes ao entrarem no mercado de trabalho. Por meio de uma revisão de literatura, este estudo
-                    busca entender os impactos da IA no meio educacional e as implicações de seu uso. Ao examinar essas
-                    questões, o trabalho visa promover uma compreensão crítica sobre a integração da IA na educação,
-                    destacando tanto os benefícios quanto os desafios. Diante disso, a pesquisa conclui que, embora a IA
-                    seja uma ferramenta poderosa para a educação, é crucial que seu uso seja acompanhado de uma reflexão
-                    consciente sobre suas limitações e seus potenciais efeitos. Dessa forma, a adoção de uma abordagem
-                    equilibrada pode garantir que a IA seja utilizada para enriquecer o processo educacional,
-                    proporcionando uma aprendizagem mais eficaz.
-</p>
-            <br>
-            <img src="" alt="Imagem">
-        </article>
         
-        -->
-        <article>
-            <h4>IBGE - Instituto Brasileiro de Geografia e Estatística (Recenseador - Censo 2022)</h4><br>
-            <p><b>Descrição: </b> O Censo Demográfico é uma pesquisa realizada pelo IBGE (Instituto Brasileiro de Geografia e Estatística) a cada dez anos, com o objetivo de contar e conhecer todos os habitantes do Brasil. Por meio dessa pesquisa, são coletadas informações sobre a quantidade de pessoas que vivem em cada região, além de dados sobre idade, sexo, escolaridade, profissão e condições de moradia, como acesso à água, energia elétrica e saneamento básico. Esses dados são fundamentais para que o governo possa planejar políticas públicas e ações que atendam melhor às necessidades da população, como a construção de escolas, hospitais e melhorias no transporte. O recenseador é o profissional responsável por visitar as residências, entrevistar os moradores e registrar as informações coletadas em um dispositivo eletrônico fornecido pelo IBGE. Ele deve se identificar corretamente, agir com educação e garantir o sigilo das informações obtidas. Dessa forma, o Censo se torna uma importante ferramenta para compreender a realidade do país e orientar o desenvolvimento social e econômico do Brasil.</p>
-              </p> <br>
-            <img width="100%" src="https://imagens.ebc.com.br/VBfqDZEB27rCHM41G6NhTuuBdhw=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/trbr8683.jpg?itok=McDbsj-6" alt="Imagem">
-        </article>
-        <br>
-       
 
-        <br>
+        <section>
+            <div>
+                <h2 id="titulo" style=" text-align: center; font-size: 2rem; margin-bottom: 3rem;">Experiências</h2>
+            </div>
+            <article>
+                <h4>IBGE - Instituto Brasileiro de Geografia e Estatística (Recenseador - Censo 2022)</h4><br>
+                <p><b>Descrição: </b> O Censo Demográfico é uma pesquisa realizada pelo IBGE (Instituto Brasileiro de Geografia e Estatística) a cada dez anos, com o objetivo de contar e conhecer todos os habitantes do Brasil. Por meio dessa pesquisa, são coletadas informações sobre a quantidade de pessoas que vivem em cada região, além de dados sobre idade, sexo, escolaridade, profissão e condições de moradia, como acesso à água, energia elétrica e saneamento básico. Esses dados são fundamentais para que o governo possa planejar políticas públicas e ações que atendam melhor às necessidades da população, como a construção de escolas, hospitais e melhorias no transporte. O recenseador é o profissional responsável por visitar as residências, entrevistar os moradores e registrar as informações coletadas em um dispositivo eletrônico fornecido pelo IBGE. Ele deve se identificar corretamente, agir com educação e garantir o sigilo das informações obtidas. Dessa forma, o Censo se torna uma importante ferramenta para compreender a realidade do país e orientar o desenvolvimento social e econômico do Brasil.</p>
+                  </p> <br>
+                <img width="100%" src="https://imagens.ebc.com.br/VBfqDZEB27rCHM41G6NhTuuBdhw=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/trbr8683.jpg?itok=McDbsj-6" alt="Imagem">
+            </article>
+            <br>
+           
+    
+            <br>
+            
+            <article>
+                <h4>PIBID - O Programa Institucional de Bolsas de Iniciação à Docência</h4><br>
+                <p><b>Descrição: </b>O Programa Institucional de Bolsas de Iniciação à Docência, mais conhecido pela abreviação Pibid,[1] é uma política governamental de formação de docentes em nível superior, valorização do magistério e, melhoria da qualidade da educação básica, que integra a Política Nacional de Formação de Professores do Ministério da Educação (via Decreto n.º 7.219/2010 e Portaria 096/2013),[2] administrado pela CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), que acolhe Projetos Institucionais de outras agências de fomento que perspectivem Programas da mesma natureza.</p>
+                <br>
+                <img width="100%" src="https://cdn.unasp.br/unasp-home/2024/10/14075940/Logo-principal-horizontal.png" alt="Imagem">
+            </article>
+            <!--
+                    <article>
+                <h4>Atividade ou Experiência:</h4><br>
+                <p><b>Descrição: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae? Architecto officiis quod dolorum reprehenderit blanditiis? Beatae, quia ut sed aliquid vitae nobis ipsum corporis perspiciatis blanditiis ad quo natus?</p>
+                <br>
+                <img src="" alt="Imagem">
+            </article>
+            -->
+            <br><br><br><br><br><br><br><br><br><br>
+        </section>
+
+        <br><br><br><br><br>
         
-        <article>
-            <h4>PIBID - O Programa Institucional de Bolsas de Iniciação à Docência</h4><br>
-            <p><b>Descrição: </b>O Programa Institucional de Bolsas de Iniciação à Docência, mais conhecido pela abreviação Pibid,[1] é uma política governamental de formação de docentes em nível superior, valorização do magistério e, melhoria da qualidade da educação básica, que integra a Política Nacional de Formação de Professores do Ministério da Educação (via Decreto n.º 7.219/2010 e Portaria 096/2013),[2] administrado pela CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), que acolhe Projetos Institucionais de outras agências de fomento que perspectivem Programas da mesma natureza.</p>
-            <br>
-            <img width="100%" src="https://cdn.unasp.br/unasp-home/2024/10/14075940/Logo-principal-horizontal.png" alt="Imagem">
-        </article>
-        <!--
-                <article>
-            <h4>Atividade ou Experiência:</h4><br>
-            <p><b>Descrição: </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae? Architecto officiis quod dolorum reprehenderit blanditiis? Beatae, quia ut sed aliquid vitae nobis ipsum corporis perspiciatis blanditiis ad quo natus?</p>
-            <br>
-            <img src="" alt="Imagem">
-        </article>
-        -->
-        <br><br><br><br><br><br><br><br><br><br>
     </main>
 
     <footer class="rodape">
