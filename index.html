@@ -1,290 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículo digital de Adriel Medeiros de Araújo - Técnico em Informática e Licenciando em Computação.">
-
-    <title>Currículo - Adriel Medeiros de Araújo</title>
+    <title>Document</title>
 </head>
+
 <style>
-
-
-
     * {
         margin: 0;
         padding: 0;
     }
+
     body {
-   
-       background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+       
+        margin: 10% 0 0 0;
+        background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 10%, rgba(0, 212, 255, 1) 100%);
+        min-height: 100vh;
     }
-    .cabecalho {
-        width: 70%;
-        margin: 15px auto;
-        margin-bottom: 0;
+    main {
+        width: 80%;
+        margin: 20% auto;
         margin-top: 0;
-        padding: 20px;
+        margin-bottom: 0;
         background-color: white;
-        height: 45rem;
-        box-shadow: 5px 5px 5px;
-      
-      
+        box-shadow: 5px 5px 10px;
+        border-radius: 10px;
+        border: solid 0.5px black;
     }
-    nav {
-        margin-bottom: 5rem;
-        
+    .principal {
+        display: flex;
     }
-    nav ul li {
+    .ladA {
+        width: 70%;
+        padding: 3rem;
+    }
+    .ladA p {
+        color: grey;
+    }
+    .ladB {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: rgb(21, 21, 29);
+        width: 30%;
+    }
+    .logos li {
         display: inline;
-        padding: 15px;
     }
-    .cabecalhoMain {
-        display: flex;
-        margin-bottom: 4rem;
-        padding: 1rem;
-        margin-top: 0;
+    footer {
+        padding: 5rem;
     }
-    .cabecalhoMainA {
-        width: 50%;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .cabecalhoMainB {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-       
-    }
-    .containerMain {
-        width: 70%;
-        margin: 15px auto;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 5PX 5PX 5PX;
-     
-      
-    }
-    .Formacao_Habilidades {
-        display: flex;
-        margin-bottom: 2rem;
-
-    }
-    .formacao {
-        width: 50%;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-      
-     
-    }
-    .habilidade {
-        width: 50%;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-  
-       
-    }
-    .rodape {
-        width: 70%;
-        margin: 15px auto;
-        margin-top: 0;
-        padding: 1.3rem;
-        margin-bottom: 0;
-        background-color: white;
-        list-style-type: none;
-        box-shadow: 5PX 5PX 5PX;
-    
-    
-        
-       
-    }
-    .rodape ul li {
-        list-style-type: none;
-    }
-    article h4{
-        border: 1px solid;
-        padding: 1rem;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px rgba(9, 9, 121, 1);
-    }
-    @media screen and (max-width: 600px) {
-
-
-        .cabecalho {
-            width: 80%;
-            margin: 20px auto;
-            margin-bottom: 0rem;
-            margin-top: 0;
-            padding: 20px;
-            background-color: white;
-            height: 55rem;
-            box-shadow: 5px 5px 5px;
-      
-        }
-
-        .containerMain {
-        width: 80%;
-        margin: 20px auto;
-        margin-bottom: 1rem;
-        margin-top: 0;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 5px 5px 5px;
-      
-        }
-
-        .rodape {
-        width: 80%;
-        margin: 20px auto;
-        margin-top: 0;
-        padding: 1.3rem;
-        margin-bottom: 0;
-        background-color: white;
-        list-style-type: none;
-        box-shadow: 5px 5px 5px;
-    
-        
-       
-        }
-
-        .cabecalhoMain {
-            margin-top: 1rem;
-        }
-        .containerMain #titulo {
-            margin-top: 6rem;
-        }
-        .Formacao_Habilidades {     
-            flex-direction: column; 
-        }
-        .cabecalhoMainA {
-            margin-top: 3rem;
-            width: 100%;
-        }
-        .cabecalhoMainB {
-            width: 100%;
-        }
-        nav {
-            display: none;
-        }
-        .habilidade, .formacao {
-            margin-top: 20px;
-            width: 100%;
-        }
-        .cabecalhoMain {
+    @media screen and (max-width: 730px) {
+        .principal {
             flex-direction: column;
         }
+        .ladB {
+            width: 100%;
+        }
+        .ladB img {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
     }
 
-
+    
+    
 </style>
 
-
-
 <body>
-    
-    <header class="cabecalho">
-        <nav>
-            <hr><br>
-            <ul>
-                <li>Home</li>
-                <li>Contatos</li>
-                <li>Sobre</li>
-            </ul>
-            <br><hr>
-        </nav>
-        <section class="cabecalhoMain" >
-            <div class="cabecalhoMainA">
-                <h1>Adriel M. Araújo</h1>
-            </div>
-            <div class="cabecalhoMainB">
-                <img style="box-shadow: 5px 5px 5px  rgba(9, 9, 121, 1); border-radius: 100%;" height="" width="50%" src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
-                    alt="Imagem">
-            </div>
-        </section>
-        <div>
-            <p style="padding: 1REM; margin-top: 3rem;">Bem-vindo(a)!
 
-                Transforme suas ideias em resultados reais. Nossa equipe está pronta para ajudar você a alcançar seus objetivos com soluções práticas, eficientes e sob medida para o que você precisa.
-                
-                Descubra como podemos impulsionar seu crescimento e tornar seus projetos ainda mais bem-sucedidos.
-                
-                Entre em contato e dê o primeiro passo agora mesmo!</p>
-        </div>
-       
-    </header>
 
-    <br>
-
-    
-    <main class="containerMain">
-    
-        <h2 id="titulo" style="margin-top: 2rem; margin-bottom: 5rem; text-align: center; font-size: 2rem">Formação - Habilidades - Competências</h2>
-        <section class="Formacao_Habilidades">
-            <div class="formacao">
-                <ul>
-                    <li> Técnico em Informática pelo <a target="_blank"
-                            href="https://www.ifpb.edu.br/princesaisabel">IFPB - Princesa Isabel.</a></li>
-                    <br><li>Licenciatura em Computação pelo <a href="https://portal.ifpe.edu.br/afogados/">IFPE - Afogados
-                            da Ingazeira.</a></li>
-                    
-                </ul>
-            </div>
-            <div class="habilidade">
-                 <ul>
-                    <li>Informática Avançada.</li><br>
-                    <li>Inglês Intermediário.</li><br>
-                    <li>Manuteção e Suporte em Hardware.</li><br>
-                    <li>Programador Junior.</li>
-                    
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2 id="titulo" style=" text-align: center; font-size: 2rem; margin-bottom: 3rem;">Experiências</h2>
-            </div>
-            <article>
-                <h4>IBGE - Instituto Brasileiro de Geografia e Estatística (Recenseador - Censo 2022)</h4><br>
-                <p><b>Descrição: </b> O Censo Demográfico é uma pesquisa realizada pelo IBGE (Instituto Brasileiro de Geografia e Estatística) a cada dez anos, com o objetivo de contar e conhecer todos os habitantes do Brasil. Por meio dessa pesquisa, são coletadas informações sobre a quantidade de pessoas que vivem em cada região, além de dados sobre idade, sexo, escolaridade, profissão e condições de moradia, como acesso à água, energia elétrica e saneamento básico. Esses dados são fundamentais para que o governo possa planejar políticas públicas e ações que atendam melhor às necessidades da população, como a construção de escolas, hospitais e melhorias no transporte. O recenseador é o profissional responsável por visitar as residências, entrevistar os moradores e registrar as informações coletadas em um dispositivo eletrônico fornecido pelo IBGE. Ele deve se identificar corretamente, agir com educação e garantir o sigilo das informações obtidas. Dessa forma, o Censo se torna uma importante ferramenta para compreender a realidade do país e orientar o desenvolvimento social e econômico do Brasil.</p>
-                  </p> <br>
-                <img width="100%" src="https://imagens.ebc.com.br/VBfqDZEB27rCHM41G6NhTuuBdhw=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/trbr8683.jpg?itok=McDbsj-6" alt="Imagem">
-            </article>
-            <br>
-            <br>
-            <article>
-                <h4>PIBID - O Programa Institucional de Bolsas de Iniciação à Docência</h4><br>
-                <p><b>Descrição: </b>O Programa Institucional de Bolsas de Iniciação à Docência, mais conhecido pela abreviação Pibid,[1] é uma política governamental de formação de docentes em nível superior, valorização do magistério e, melhoria da qualidade da educação básica, que integra a Política Nacional de Formação de Professores do Ministério da Educação (via Decreto n.º 7.219/2010 e Portaria 096/2013),[2] administrado pela CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), que acolhe Projetos Institucionais de outras agências de fomento que perspectivem Programas da mesma natureza.</p>
+    <main>
+        <div class="principal">
+            <section class="ladA">
                 <br>
-                <img width="100%" src="https://cdn.unasp.br/unasp-home/2024/10/14075940/Logo-principal-horizontal.png" alt="Imagem">
-            </article>
-            <br><br><br><br><br><br><br><br><br><br>
-        </section>
+                <h1>Adriel Medeiros de Araújo</h1><br>
+                <h4>Programador Jr</h4><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ipsam id corporis dignissimos dolor,
+                    optio
+                    similique. Voluptatibus laudantium culpa dolor voluptatum omnis dolorum eligendi odio eveniet eos
+                    asperiores,
+                    maiores veritatis!</p><br>
 
-        <br><br><br><br><br>
-        
+                <b>Saiba mais</b>
+
+                <div class="logos" style="padding: 1rem;">
+                    <ul>
+                        <li><img width="5%" src="whatsapp.png" alt=""></li>
+                        <li>
+                            <img width="5%" src="e-mail.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="ladB">
+                <div style="display: flex; align-items: center; justify-content: center; background-color: rgb(21, 21, 29);">
+                    <img style="border-radius: 100%; box-shadow: 5px 5px 10px" id="img" width="50%" src="Perfil.webp"
+                        alt="imagem">
+                </div>
+
+                
+            </section>
+        </div>
     </main>
-    <br>
-    <footer class="rodape">
-       <ul>
-            <li><b>E-mail:</b> adrielmedeirosaraujo@gmail.com</li>
-            <li><b>Github:</b> adrielmedeiros01</li>
-       </ul>
-       <br><br>
-       <div style="text-align: center;"><p>@copy2025</p></div>
+    <br><br><br><br><br><br><br><br>
+    <footer>
     </footer>
 
-
 </body>
+
 </html>
